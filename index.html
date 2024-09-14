@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marketplace</title>
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img/usiu.jpeg" alt="logo">
+        <h1>Student Marketplace</h1>
+        <nav>
+            <button id="logInButton"><i class="fas fa-sign-in-alt"></i> Log In</button>
+            <button id="sign-upButton"><i class="fas fa-user-plus"></i> Sign-Up</button>
+            <button id="cartButton"><i class="fas fa-shopping-cart"></i> Cart (<span id="cartCount">0</span>)</button>
+        </nav>
+    </header>
+
+    <!-- Main Product Section -->
+    <section id="product-list">
+        <h2>Products for Sale</h2>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Price: $10</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Price: $15</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <!-- Add more product cards as needed -->
+    </section>
+
+    <!-- Section for Viewing Other Products -->
+    <section id="other-products">
+        <h2>Other Products You May Like</h2>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Product 3">
+            <h3>Product 3</h3>
+            <p>Price: $20</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Product 4">
+            <h3>Product 4</h3>
+            <p>Price: $30</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <!-- Add more product cards for other products -->
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="cta-footer">
+            <h2>Looking to Sell?</h2>
+            <p>Sign up today to start selling and begin your operations.</p>
+            <button id="signUpFooterButton"><i class="fas fa-user-plus"></i> Sign Up Now</button>
+        </div>
+        <div class="footer-content">
+            <p>&copy; 2024 Student Marketplace. All rights reserved.</p>
+            <p>Contact Us: <a href="mailto:info@studentmarketplace.com">info@studentmarketplace.com</a></p>
+        </div>
+    </footer>
+
+
+    
+</body>
+</html>
