@@ -1,0 +1,351 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #1E4484; /* Dark blue */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+header img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    flex-grow: 1;
+}
+
+nav button {
+    background-color: #F6C145; /* Gold */
+    color: #1E4484; /* Dark blue */
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+nav button:hover {
+    background-color: #e1a72e; /* Darker gold */
+}
+
+#product-list, #other-products {
+    padding: 20px;
+}
+
+h2 {
+    color: #1E4484;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.add-to-cart {
+    background-color: #F6C145;
+    color: #1E4484;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #e1a72e;
+}
+
+/* slider class styling */
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+.slider-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.slider-text {
+    z-index: 1;
+}
+
+.slider-text h2 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0 20px;
+    color: #080808; /* Gold */
+    font-weight: bold;
+}
+
+.cta-signup {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #F6C145; /* Gold */
+    color: #1E4484; /* Dark blue */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.cta-signup:hover {
+    background-color: #e1a72e; /* Darker gold */
+}
+
+/* Categories Section */
+.categories {
+    padding: 40px 20px; /* Add more padding for better spacing */
+    background-color: #ffffff; /* Set a background color to distinguish from slider */
+    border-top: 2px solid #1E4484; /* Add a border at the top to separate from slider */
+    text-align: center;
+    margin-top: 20px; /* Add margin to create space from slider */
+}
+
+.categories h2 {
+    font-size: 2rem;
+    color: #1E4484; /* Dark blue */
+    margin-bottom: 20px;
+}
+
+.categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.category-card {
+    background-color: #ffffff; /* White background for cards */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 220px; /* Adjust width for better spacing */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-card img {
+    width: 100%;
+    height: 160px; /* Adjust height for a better card appearance */
+    object-fit: cover;
+}
+
+.category-card h3 {
+    margin: 10px;
+    color: #1E4484; /* Dark blue */
+    font-size: 1.3rem; /* Slightly larger font for emphasis */
+}
+
+.category-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Call to Action Section */
+.cta {
+    background-color: #1E4484; /* Dark blue background */
+    color: #ffffff; /* White text color */
+    text-align: center;
+    padding: 40px 20px;
+    margin: 20px 0;
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+.cta-content {
+    max-width: 600px; /* Center the content */
+    margin: 0 auto;
+}
+
+.cta h2 {
+    font-size: 2rem; /* Adjust font size */
+    color: #F6C145; /* Gold text color */
+    margin: 0 0 20px; /* Space below the heading */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F6C145; /* Gold background for the button */
+    color: #1E4484; /* Dark blue text */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e1a72e; /* Darker gold on hover */
+}
+
+
+
+/* Footer Styling */
+.footer {
+    background-color: #333333; /* Dark grey background */
+    color: #ffffff; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer .col {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+    text-align: left; /* Align text to the left for better readability */
+}
+
+.footer h4 {
+    color: #F6C145; /* Gold for headings */
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #ffffff; /* White text color */
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+    font-size: 0.9rem; /* Slightly smaller font for links */
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: #F6C145; /* Gold color on hover for better visibility */
+}
+
+.footer .col span {
+    margin: 0 10px;
+}
+
+.footer .col i {
+    color: #F6C145; /* Gold icons */
+    font-size: 1.5rem;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.footer .col i:hover {
+    color: #e1a72e; /* Darker gold on hover for icons */
+}
+
+.footer-bottom {
+    background-color: #1E4484; /* Dark blue for the bottom section */
+    padding: 10px;
+    border-top: 1px solid #ffffff; /* White border to separate from the main footer */
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #ffffff; /* White text color */
+}
+
+
+/* Responsive Styling */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .footer .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .col {
+        margin-bottom: 20px;
+    }
+
+    .footer .col i {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    .cta-footer h2 {
+        font-size: 1.2rem;
+    }
+
+    .cta-footer p {
+        font-size: 0.9rem;
+    }
+
+    .cta-footer button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
